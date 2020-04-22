@@ -34,7 +34,7 @@ class TransactionsRepository {
       transaction.type === 'income' ? transaction.value : 0,
     );
 
-    const sumIncomes = incomes.reduce((total, outcome) => total + outcome, 0);
+    const sumIncomes = incomes.reduce((total, income) => total + income, 0);
 
     const total = sumIncomes - sumOutcomes;
 
